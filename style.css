@@ -1,0 +1,112 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8F7F5;
+    color: #222326;
+     margin: 0;
+    padding: 30px 0;
+}
+
+
+form {
+    width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #A83246;
+    margin-bottom: 25px;
+}
+
+
+
+form label {
+    color: #222326;
+    font-weight: bold;
+}
+
+
+form input:not([type="radio"]) {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    border: 1px solid #304A70;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #304A70;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signup-btn {
+    background-color: #A83246;
+}
+
+.login-btn {
+    background-color: transparent;
+    color: #304A70;
+    border: 1px solid #304A70;
+}
+
+.signup-btn:hover {
+    background-color: #8F293B;
+}
+
+.login-btn:hover {
+    background-color: #304A70;
+    color: white;
+}
+
+form input {
+    margin-bottom: 8px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.role-section {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.role-section > label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.role-option {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.role-option input {
+    margin-right: 6px;
+}
+
+
+form .login-main-btn {
+    background-color: #A83246;
+}
+
+form .login-main-btn:hover {
+    background-color: #8F293B;
+}
