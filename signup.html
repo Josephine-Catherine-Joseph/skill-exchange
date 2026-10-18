@@ -1,60 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkillVerse Sign Up</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
     <h1>Create Your SkillVerse Account</h1>
 
-    <form>
-          
+    <form id="signupForm">
 
-        <label>Full Name</label>
-        <input type="text" placeholder="Enter your name">
+        <label for="name">Full Name</label>
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+        >
 
-        <label>Email</label>
-        <input type="email" placeholder="Enter your email">
+        <label for="email">Email</label>
+        <input
+            type="email"
+            id="email"
+            placeholder="example@gmail.com"
+            required
+        >
 
-         <label>Password</label>
-<input type="password" placeholder="Enter your password">
+        <label for="password">Password</label>
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            required
+        >
 
-<label>Confirm Password</label>
-<input type="password" placeholder="Confirm your password">
+        <small class="password-info">
+            Password must contain at least 8 characters, one uppercase letter,
+            one lowercase letter, one number and one special character.
+        </small>
 
-        <label>Phone Number</label>
-         <input type="tel" placeholder="Enter your Phone Number ">
+        <label for="confirmPassword">Confirm Password</label>
+        <input
+            type="password"
+            id="confirmPassword"
+            placeholder="Confirm your password"
+            required
+        >
 
+        <label for="phone">Phone Number</label>
+        <input
+            type="tel"
+            id="phone"
+            placeholder="Enter 10-digit phone number"
+            maxlength="10"
+            required
+        >
 
+        <label for="location">Location</label>
+        <input
+            type="text"
+            id="location"
+            placeholder="Enter your address"
+            required
+        >
 
-         <label>Location</label>
-        <input type="text" placeholder="Enter your  Address">
+        <label for="skill">Skill You Can Offer</label>
+        <input
+            type="text"
+            id="skill"
+            placeholder="Example: Cooking, Guitar, Coding"
+            required
+        >
 
+        <button class="signup-btn" type="button" onclick="signup()">
+            Sign Up
+        </button>
 
-
-        <label>Skill You Can Offer</label>
-        <input type="text" placeholder="Example: Cooking, Guitar, Coding">
-
-    
-
-
-      
-
-            
-      
-
-        <button class="signup-btn" type="button" onclick="signup()">Sign Up</button>
         <br><br>
 
-        <button class="login-btn" type="button" onclick="goToLogin()">Already have an account? Login</button>
-
+        <button class="login-btn" type="button" onclick="goToLogin()">
+            Already have an account? Login
+        </button>
 
     </form>
+
+    <script src="script.js"></script>
 
 </body>
 
