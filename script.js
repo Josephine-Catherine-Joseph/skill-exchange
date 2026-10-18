@@ -118,8 +118,8 @@ function signup() {
     */
 
     let passwordPattern =
-        /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-
+    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}$/;
+    
     if (!passwordPattern.test(password)) {
         alert(
             "Password must contain at least 8 characters, " +
