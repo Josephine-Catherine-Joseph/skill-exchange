@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillVerse | Admin Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-page">
+
+    <header class="admin-header">
+        <a href="index.html" class="admin-brand">
+            Skill<span>Verse</span>
+        </a>
+        <a href="admin-signup.html" class="admin-nav-link">
+            Admin Sign Up
+        </a>
+    </header>
+
+    <main class="admin-form-card admin-login-card">
+        <p class="admin-eyebrow">ADMINISTRATION</p>
+        <h1>Welcome, Admin</h1>
+        <p class="admin-subtitle">
+            Sign in to access the SkillVerse dashboard.
+        </p>
+
+        <form id="adminLoginForm">
+            <label for="adminLoginEmail">Gmail Address</label>
+            <input id="adminLoginEmail" type="email"
+                   placeholder="Enter admin Gmail" required>
+
+            <label for="adminLoginPassword">Password</label>
+            <input id="adminLoginPassword" type="password"
+                   placeholder="Enter your password" required>
+
+            <button type="submit" class="admin-primary-btn">
+                Login to Dashboard
+            </button>
+        </form>
+
+        <p class="admin-bottom-text">
+            Don't have an admin account?
+            <a href="admin-signup.html">Register here</a>
+        </p>
+
+        <a class="admin-back-link" href="index.html">
+            ← Back to SkillVerse
+        </a>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillVerse | Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+
+    <header class="admin-header">
+        <a href="index.html" class="admin-brand">
+            Skill<span>Verse</span>
+        </a>
+
+        <div class="dashboard-nav">
+            <span id="adminWelcome">Administrator</span>
+            <button type="button" class="admin-logout-btn"
+                    onclick="adminLogout()">Logout</button>
+        </div>
+    </header>
+
+    <main class="dashboard-main">
+        <p class="admin-eyebrow">ADMIN CONTROL PANEL</p>
+        <h1>Dashboard</h1>
+        <p class="dashboard-description">
+            Manage SkillVerse demo registrations.
+        </p>
+
+        <section class="dashboard-stats">
+            <article class="stat-card">
+                <p>Total Registered Users</p>
+                <h2 id="totalUsers">0</h2>
+            </article>
+
+            <article class="stat-card">
+                <p>Registered Admins</p>
+                <h2 id="totalAdmins">0</h2>
+            </article>
+        </section>
+
+        <section class="user-management">
+            <div class="management-heading">
+                <div>
+                    <h2>User Management</h2>
+                    <p>Search and view registered demo users.</p>
+                </div>
+
+                <button type="button" class="refresh-btn"
+                        onclick="renderAdminDashboard()">
+                    Refresh
+                </button>
+            </div>
+
+            <label for="userSearch">Search users</label>
+            <input type="search" id="userSearch"
+                   placeholder="Search by name, email or location">
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Location</th>
+                            <th>Skill</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="usersTableBody"></tbody>
+                </table>
+            </div>
+
+            <p id="noUsersMessage" class="empty-message">
+                No user registrations found.
+            </p>
+        </section>
+
+        <p class="dashboard-notice">
+            Frontend demo only. Data is stored in this browser and
+            is not shared between different devices or browsers.
+        </p>
+
+        <a href="index.html" class="admin-back-link">
+            ← Back to SkillVerse
+        </a>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

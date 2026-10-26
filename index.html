@@ -1,51 +1,178 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkillVerse Login</title>
+
+    <title>SkillVerse | Learn, Share, Grow</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="landing-page">
 
-    <h1>Welcome Back to SkillVerse</h1>
+    <!-- Navigation Bar -->
+    <header class="site-header">
 
-    <form id="loginForm">
+        <a href="index.html" class="brand">
+            <span class="brand-icon">S</span>
+            <span>Skill<span class="brand-highlight">Verse</span></span>
+        </a>
 
-        <label for="loginEmail">Email</label>
-        <input
-            type="email"
-            id="loginEmail"
-            placeholder="Enter your Gmail"
-            required
-        >
+        <nav class="main-nav">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#features" class="nav-link">Features</a>
 
-        <label for="loginPassword">Password</label>
-        <input
-            type="password"
-            id="loginPassword"
-            placeholder="Enter your password"
-            required
-        >
+            <a href="login.html" class="nav-login">Login</a>
+            <a href="signup.html" class="nav-signup">Sign Up</a>
+            <a href="admin-login.html" class="nav-link">Admin</a>
+        </nav>
 
-        <br>
+    </header>
 
-        <button class="login-main-btn" type="button" onclick="login()">
-            Login
-        </button>
 
-        <br><br>
+    <!-- Hero Section -->
+    <main>
 
-        <button class="login-btn" type="button" onclick="goToSignup()">
-            Don't have an account? Sign Up
-        </button>
+        <section class="hero-section" id="home">
 
-    </form>
+            <div class="hero-content">
 
+                <p class="eyebrow">LEARN &nbsp; • &nbsp; SHARE &nbsp; • &nbsp; GROW</p>
+
+                <h1>
+                    Welcome to<br>
+                    <span class="hero-brand">
+                        Skill<span class="brand-highlight">Verse</span>
+                    </span>
+                </h1>
+
+                <h2>Neighborhood Skill Exchange Platform</h2>
+
+                <p class="hero-description">
+                    Everyone has a skill worth sharing.
+                    Connect with people in your locality,
+                    exchange knowledge, learn something new,
+                    and grow together as a community.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="primary-button"
+                            onclick="goToLogin()">
+                        Login
+                    </button>
+
+                    <button class="secondary-button"
+                            onclick="goToSignup()">
+                        Sign Up
+                    </button>
+
+                </div>
+
+                <p class="hero-note">
+                    Your community. Your skills. Your opportunities.
+                </p>
+
+            </div>
+
+
+            <!-- Community Learning Image -->
+            <div class="hero-image-container">
+
+                <img
+                    class="hero-image"
+                    src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=85"
+                    alt="People connecting and learning together in a community"
+                >
+
+                <div class="image-caption">
+                    <span class="caption-dot"></span>
+                    Skills bring people together
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+
+            <p class="eyebrow">ABOUT SKILLVERSE</p>
+
+            <h2>Learn from others. Share what you know.</h2>
+
+            <p>
+                SkillVerse is a neighborhood skill exchange platform
+                designed to help people discover local talent,
+                share their abilities, and learn from one another
+                without relying only on paid services.
+            </p>
+
+        </section>
+
+
+        <!-- Features Section -->
+        <section class="features-section" id="features">
+
+            <div class="section-heading">
+                <p class="eyebrow">WHAT YOU CAN DO</p>
+                <h2>Skills create connections</h2>
+            </div>
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+                    <div class="feature-icon red-icon">01</div>
+                    <h3>Learn New Skills</h3>
+                    <p>
+                        Discover new skills and learn from
+                        talented people in your community.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon blue-icon">02</div>
+                    <h3>Share Your Talent</h3>
+                    <p>
+                        Teach what you know, exchange knowledge,
+                        and help others grow.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon red-icon">03</div>
+                    <h3>Connect Locally</h3>
+                    <p>
+                        Meet people nearby and build meaningful
+                        connections through shared interests.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>
+            <span class="footer-brand">SkillVerse</span>
+            &nbsp; • &nbsp; Neighbors &nbsp; • &nbsp;
+            Skills &nbsp; • &nbsp; Opportunities
+        </p>
+        <p>Learn together. Grow together.</p>
+    </footer>
+
+
+    <!-- Existing Navigation Functions -->
     <script src="script.js"></script>
 
 </body>
-
 </html>

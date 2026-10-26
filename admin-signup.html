@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillVerse | Admin Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-page">
+
+    <header class="admin-header">
+        <a href="index.html" class="admin-brand">
+            Skill<span>Verse</span>
+        </a>
+        <a href="admin-login.html" class="admin-nav-link">Admin Login</a>
+    </header>
+
+    <main class="admin-form-card">
+        <p class="admin-eyebrow">ADMINISTRATION</p>
+        <h1>Create Admin Account</h1>
+        <p class="admin-subtitle">
+            Register with an authorized admin code.
+        </p>
+
+        <form id="adminSignupForm">
+            <label for="adminName">Full Name</label>
+            <input id="adminName" type="text"
+                   placeholder="Enter your full name" required>
+
+            <label for="adminEmail">Gmail Address</label>
+            <input id="adminEmail" type="email"
+                   placeholder="example@gmail.com" required>
+
+            <label for="adminPassword">Password</label>
+            <input id="adminPassword" type="password"
+                   placeholder="Create a strong password" required>
+
+            <small class="admin-hint">
+                At least 8 characters, uppercase, lowercase,
+                number and special character.
+            </small>
+
+            <label for="adminConfirmPassword">Confirm Password</label>
+            <input id="adminConfirmPassword" type="password"
+                   placeholder="Confirm password" required>
+
+            <label for="adminPhone">Phone Number</label>
+            <input id="adminPhone" type="tel"
+                   inputmode="numeric" maxlength="10"
+                   placeholder="10-digit phone number" required>
+
+            <label for="adminLocation">Location</label>
+            <input id="adminLocation" type="text"
+                   placeholder="Enter your location" required>
+
+            <label for="adminCode">Secret Registration Code</label>
+            <input id="adminCode" type="password"
+                   placeholder="Enter authorized code" required>
+
+            <button type="submit" class="admin-primary-btn">
+                Create Admin Account
+            </button>
+        </form>
+
+        <p class="admin-bottom-text">
+            Already registered?
+            <a href="admin-login.html">Admin Login</a>
+        </p>
+
+        <a class="admin-back-link" href="index.html">
+            ← Back to SkillVerse
+        </a>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
